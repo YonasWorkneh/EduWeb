@@ -104,16 +104,19 @@ tr{
 .comment h3{
   padding-bottom: 15px;
 }
-.comment a{
+.comment input[type=submit]{
   margin:0 0 20px 30px;
+  background:initial;
+  border-radius:initial;
   border:1px solid #fe5b3d;
   padding:8px 20px;
   color:#fe5b3d;
   font-weight: 300;
   transition:0.8s;
+  opacity:initial;
 
 }
-.comment a:hover{
+.comment input[type=submit]:hover{
   background: #fe5b3d;
   color:#fff;
 }
@@ -192,9 +195,25 @@ footer span{
   header {
     padding:30px 20px;
   }
+   .comment input[type=submit]{
+    padding:8px 8px;
+    width:40%;
+    font-size: 13px;
+   
+  }
 }
 @media screen and (max-width:440px){
   header h1{
     top:40px;
+  }
+}
+@media screen and (max-width:455px){
+  .comment input[type=submit]{
+    width:50%;
+  }
+  @media screen and (max-width:320px){
+    .comment input[type=submit]{
+      width:60%;
+    }
   }
 }
