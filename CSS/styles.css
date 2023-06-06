@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+  font-family:'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+  list-style: none;
+  text-decoration: none;
+  margin:0;
+  box-sizing: border-box;
+}
+header{
+  height:100vh;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(../Images/banner.png);
+  background-position: center;
+  background-size: cover;
+  padding:30px 120px;
+  margin-bottom: 80px;
+  
+  
+}
+.heading{
+  display:flex;
+  justify-content: space-between;
+}
+header img{
+  width:100px;
+
+}
+.navbar{
+  display:flex;
+  gap:1rem;
+  justify-content: flex-end;
+  
+}
+.navbar a::after{
+  content:"";
+  width:0%;
+  height:2px;
+  background:#fe5b3d;
+  display:block;
+  margin:auto;
+  transition:.7s;
+  
+}
+.navbar a:hover::after{
+  width:100%;
+}
+
+.navbar a{
+  color:#fff;
+  font-size: 1rem;
+  font-weight: 500;
+  padding-right: 10px;
+  text-transform: uppercase;
+
+}
+.home{
+  height:80vh;
+  color:#fff;
+  margin-top: 200px;
+  text-align: center;
+  display:center;
+  align-items:center;
+  
+}
+.home h1{
+  font-size: 62px;
+}
+.home p{
+  font-size: .9rem;
+  padding:10px 200px;
+}
+
+.visit-btn{
+  display:inline-block;
+  color:#fff;
+  border:1px solid #fff;
+  padding:12px 30px;
+  background: transparent;
+  margin-top: 30px;
+  
+}
+.visit-btn:hover{
+  border-color: #fe5b3d ;
+  background: #fe5b3d;
+  transition: 1s;
+
+}
+
+.courses h2,.facilities h2,.review h2,.campus h2{
+  font-size: 2.1rem;
+  padding-bottom: 12px;
+}
+.courses p,.facilities p,.review p,.campus p{
+  font-size: 1rem;
+  font-weight: 400;
+  color:#777;
+}
+.bx-course{
+  display:flex;
+  gap:1.5rem;
+  margin-top: 50px;
+}
+
+.box{
+  background: #fff3f3;
+  opacity:0.8;
+  border-radius: 10px;
+  transition: 0.6s;
+  padding:15px;
+}
+.box h3{
+  padding-top: 15px;
+}
+.box p,.bx p{
+ font-size: 15px;
+ font-weight: 400;
+ padding: 15px 0; 
+ color:#222;
+ 
+}
+.box:hover{
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+}
+.camp-img{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap:1rem;
+  margin-top: 20px;
+  
+}
+.camp-img div img{
+  width:280px;
+  height:345px;
+  border-radius:10px;
+  
+}
+.camp-img div{
+  position:relative;
+ 
+}
+.camp-img div h3{
+  width:100%;
+  height:345px;
+  position:absolute;
+  top:0;
+  left:0;
+  border-radius: 10px;
+  text-transform: uppercase;
+  color:#fff;
+  display: none;
+  font-weight: 500;
+  
+
+}
+.camp-img div:hover h3{
+  background: rgba(112,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  
+}
+
+
+
+.bx-facility{
+  display:flex;
+  gap:1.5rem;
+}
+.bx{
+  margin-top: 40px;
+  text-align: left;
+}
+.bx img{
+  width:350px;
+  border-radius: 8px;
+  object-fit: cover;
+  object-position: center;
+  
+}
+.bx h4{
+  padding-top: 15px;
+}
+.bx img:hover{
+ opacity: 0.8;
+}
+.testemonial{
+  display:flex;
+  gap:1.5rem;
+  text-align: left;
+  margin-top: 40px;
+
+}
+.test{
+  background: #fff3f3;
+  padding:15px;
+  border-radius: 10px;
+  display:flex;
+
+}
+.test img{
+  width:50px;
+  height:50px;
+  border-radius: 25px;
+  object-position: center;
+  object-fit: cover;
+  margin-right: 15px;
+ 
+}
+
+.test h5{
+  font-size: 1rem;
+  padding-top: 10px;
+}
+.test i{
+  color:#fe5b3d;
+  margin:initial;
+  padding-top: 10px;
+}
+.contact{
+  height:400px;
+  text-align: center;
+  background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(../Images/banner2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact:hover{
+  opacity:0.9;
+}
+
+.contact h2{
+  font-size: 2rem;
+  padding:20px;
+  color:#fff;
+  text-transform: uppercase;
+  line-height: 1.4;
+  margin-bottom: 25px;
+}
+.contact a{
+  color:#fff;
+  border:1px solid #fff;
+  padding:10px 34px;
+  text-transform: uppercase;
+  transition: .6s;
+}
+.contact a:hover{
+border-color: #fe5b3d;
+background: #fe5b3d;
+}
+footer{
+  margin:50px 200px;
+  text-align: center;
+}
+footer h6{
+  font-size: 1rem;
+  color:#222;
+  padding-bottom: 30px;
+}
+footer p{
+  color:#444;
+  font-size: 15px;
+  font-weight: 500;
+}
+footer i{
+  padding-right: 10px;
+  color:#f5593e;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+
+}
+footer span{
+  font-size: 1rem;
+  color:#999;
+  text-transform: capitalize; 
+}
+
+@media screen and (max-width:840px)
+{
+  .navbar a{
+    display:none;
+  }
+}
+@media screen and (max-width:910px){
+  .home h1{
+    font-size: 2.2rem;
+  }
+  .home p{
+    padding:5px 100px;
+  }
+}
+@media screen and (max-width:650px)
+{
+  header{
+    padding:30px 0;
+  }
+  
+  .home p{
+    padding:10px 10px;
+  }
+  .home h1{
+    font-size: 1rem;
+  }
+  .courses{
+    padding:0;
+  }
+  .facilities{
+    padding:0;
+  }
+  
+}
+@media screen and (max-width:920px){
+  .bx-course,.testemonial{
+    flex-wrap: wrap;
+  }
+  
+}
+@media screen and (max-width:1200px){
+  .bx-facility{
+    flex-wrap: wrap;
+  }
+}
+.courses,.facilities,.review,.campus{
+  text-align: center;
+  padding:0 120px 120px;
+  
+}
+@media screen and (max-width:530px){
+  .courses,.campus,.facilities,.review,.contact{
+    padding:20px;
+  }
+
+}
+@media screen and (max-width:545px){
+.bx img{
+  width:300px;
+}
+.review h2{
+  font-size: 1.7rem;
+}
+footer{
+  margin:30px 40px;
+}
+
+}
+@media screen and (max-width:385px){
+  .contact h2{
+    font-size: 1.4rem;
+    
+  }
+}
+@media screen and (max-width:340px){
+  .bx img{
+    width:240px;
+  }
+
+}
+@media screen and (max-width:300px){
+  .camp-img div img{
+    width:230px;
+    height: 280px;
+  }
+  .test p{
+    font-size: 13px;
+  }
+  .contact h2{
+    font-size: 16px;
+  }
+  .contact{
+    padding:10px;
+  }
+  footer{
+    margin:30px 15px;
+  }
+}
