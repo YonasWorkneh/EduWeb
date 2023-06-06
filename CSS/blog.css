@@ -116,6 +116,7 @@ tr{
   opacity:0.5;
 }
 .comment input[type=submit]{
+  width:30%;
   margin:0 0 20px 30px;
   background:initial;
   border-radius:initial;
